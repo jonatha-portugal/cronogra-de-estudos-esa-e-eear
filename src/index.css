@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-militar-50: #f4f7f6;
+  --color-militar-100: #e3efea;
+  --color-militar-200: #c6dfd4;
+  --color-militar-300: #9fc8b6;
+  --color-militar-400: #6ca891;
+  --color-militar-500: #498b71;
+  --color-militar-600: #356b56;
+  --color-militar-700: #295646;
+  --color-militar-800: #224538;
+  --color-militar-900: #1d392f;
+  --color-militar-950: #0f1e1a;
+
+  --color-fab-50: #eff6ff;
+  --color-fab-100: #dbeafe;
+  --color-fab-200: #bfdbfe;
+  --color-fab-500: #3b82f6;
+  --color-fab-600: #2563eb;
+  --color-fab-800: #1e40af;
+
+  --color-esa-50: #f7fee7;
+  --color-esa-100: #ecfccb;
+  --color-esa-200: #d9f99d;
+  --color-esa-500: #84cc16;
+  --color-esa-600: #65a30d;
+  --color-esa-800: #3f6212;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #fafafa;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-militar-500);
+}
+
